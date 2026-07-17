@@ -1,0 +1,376 @@
+/* Services Page Styles */
+
+/* Hero Section */
+#services-hero {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: #000;
+    background-image: url('../img/services-image/computer-plug.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.hero-title {
+    font-family: 'Newake', sans-serif;
+    font-size: 96px;
+    font-weight: 100;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.hero-content {
+    padding-left: 20px;
+    max-width: 800px;
+}
+
+.hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.hero-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Expertise Grid Section (New Design) */
+#expertise-grid-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0 100px;
+}
+
+.section-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ccc;
+    padding-left: 20px;
+}
+
+.section-title {
+    font-family: 'Newake', sans-serif;
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 80px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.card-image-container {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 40px;
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-image-container:hover {
+    transform: scale(1.02);
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Our Reach Section */
+#our-reach-section {
+    background-color: #000;
+    background-image: url('../img/office.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px 0 100px;
+}
+
+.industries-list {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.industry-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emoji-icon {
+    font-size: 24px;
+}
+
+.more-text {
+    color: #666;
+}
+
+/* How We Build Section */
+#how-we-build-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0 150px;
+}
+
+.build-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ccc;
+    padding-left: 20px;
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+.build-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.build-card {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.build-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a1a1a;
+}
+
+.build-card h3 {
+    font-family: 'Newake', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.build-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    font-weight: 300;
+}
+
+/* Why We're Different Section */
+#why-different-section {
+    background-color: #000;
+    background-image: url('../img/close-up.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px 0 150px;
+}
+
+.different-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    /* Larger gap for this section */
+    padding: 0 20px;
+}
+
+.different-item h3 {
+    font-family: 'Newake', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.different-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    font-weight: 300;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #222;
+}
+
+.stack-title {
+    font-family: 'Newake', sans-serif;
+    font-size: 75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blue-text {
+    font-family: 'Newake', sans-serif;
+    color: #2f7fef;
+}
+
+.stack-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #ccc;
+}
+
+.title-line {
+    font-family: 'Newake', sans-serif;
+    color: #aaadae;
+    font-size: 45px;
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    width: max-content;
+    padding-bottom: 40px;
+    animation: marquee 15s linear infinite;
+}
+
+.title-line span {
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.title-line span:hover {
+    color: #fff;
+}
+
+.title-line:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .expertise-grid,
+    .build-cards,
+    .different-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .expertise-grid,
+    .build-cards,
+    .different-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        padding-left: 0;
+    }
+
+    .hero-content {
+        padding-left: 0;
+    }
+
+    .section-title {
+        font-size: 48px;
+        padding-left: 0;
+    }
+
+    .section-label {
+        padding-left: 0;
+    }
+
+    .stack-title {
+        font-size: 48px;
+    }
+
+    .industry-item {
+        font-size: 20px;
+    }
+
+    .build-description {
+        font-size: 20px;
+        padding-left: 0;
+    }
+}

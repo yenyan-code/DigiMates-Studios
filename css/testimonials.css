@@ -1,0 +1,601 @@
+/* CSS for Testimonials Page - DigiMates Dark Theme */
+
+/* Base Container */
+.reviews-container {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#review {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: #000;
+    /* Deep Black Background */
+    min-height: 100vh;
+}
+
+/* Header Section */
+.testimonials-header {
+    margin-bottom: 80px;
+    padding-left: 100px;
+    /* Align with other pages */
+}
+
+.section-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #aaa;
+    /* Subtle grey label */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.testimonials-title {
+    font-family: 'Newake', sans-serif;
+    font-size: 115px;
+    /* Matching Home page size */
+    line-height: 0.9;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+
+/* Featured Spotlight Card (Hero) */
+.spotlight-wrapper {
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto 120px;
+}
+
+.spotlight-card {
+    background-color: #0a0a0a;
+    /* Very subtle contrast from pure black bg */
+    border: 1px solid #333;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    min-height: 550px;
+    position: relative;
+    /* Glow effect attempt */
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.03);
+}
+
+.spotlight-content {
+    flex: 1;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.spotlight-tags {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tag {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.tag:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.spotlight-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    /* Very tight line height like the image */
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 900px;
+    font-weight: 900;
+    /* Extra bold/Black weight */
+    letter-spacing: -2px;
+    /* Tight tracking */
+}
+
+.spotlight-desc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.spotlight-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.profile-section.large {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar-large {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.name-large {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.role-large {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.tech-stack-mini {
+    display: flex;
+    gap: 20px;
+}
+
+.tech-stack-mini span {
+    font-family: 'Newake', sans-serif;
+    /* Stylistic choice */
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.spotlight-image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Optional: gradient fade */
+    mask-image: linear-gradient(to right, transparent, black 20%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
+}
+
+/* Background pattern/gradient for the image side */
+.pattern-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #222 0%, #0a0a0a 100%);
+    z-index: 1;
+}
+
+.spotlight-img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(-3deg) translateX(20px);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 2;
+    /* Removed grayscale filter */
+}
+
+.spotlight-card:hover .spotlight-img {
+    transform: rotate(0deg) translateX(0);
+    /* Removed grayscale filter */
+}
+
+
+/* Secondary Grid Section */
+.reviews-grid-section {
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #fff;
+    padding-left: 20px;
+    letter-spacing: -2px;
+    /* Tight tracking like the image */
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.testimonial-card {
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 50px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    background-color: #111;
+    transform: translateY(-10px);
+    border-color: #fff;
+    /* White border glow on hover */
+}
+
+.card-tags {
+    margin-bottom: 30px;
+}
+
+/* Tag style reuse */
+.card-tags .tag {
+    font-size: 11px;
+    padding: 8px 20px;
+}
+
+.card-body .feedback {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 40px;
+    flex: 1;
+    font-weight: 300;
+}
+
+.card-footer {
+    padding-top: 30px;
+    border-top: 1px solid #222;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Removed grayscale filter */
+    transition: filter 0.3s;
+}
+
+.testimonial-card:hover .avatar {
+    /* Removed filter change */
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.role {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #888;
+    margin-top: 3px;
+}
+
+
+/* ----- BENEFITS SECTION (New) ----- */
+.benefits-section {
+    padding: 100px 60px;
+    max-width: 1300px;
+    margin: 80px auto;
+    text-align: center;
+    background-color: #fff;
+    /* White background request */
+    border-radius: 40px;
+    /* Card-like appearance on the black page */
+    color: #111;
+}
+
+.benefits-header {
+    margin-bottom: 80px;
+}
+
+.benefits-title {
+    font-family: 'Roboto', sans-serif;
+    /* Changed to sans-serif to match image */
+    font-size: 64px;
+    line-height: 1.2;
+    color: #000;
+    /* Black text */
+    margin: 0;
+    font-weight: 700;
+    /* Bold as per visual, though user said `dont make this bold`, the image IS bold. I'll stick to image appearance or standard Roboto Bold */
+    letter-spacing: -1px;
+    /* Tighter tracking like the image */
+}
+
+.accent-text {
+    position: relative;
+    display: inline-block;
+    border: none;
+    /* Remove previous border */
+}
+
+.accent-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    /* Adjust distance */
+    width: 100%;
+    height: 3px;
+    /* Thickness of line */
+    background-color: #000;
+    /* Black underline */
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 grid */
+    gap: 60px 80px;
+    /* Row gap, Col gap */
+    text-align: left;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Invert Icon Colors: Black Box, White Check */
+.check-icon svg rect {
+    fill: #000;
+}
+
+.check-icon svg path {
+    stroke: #fff;
+}
+
+.check-icon svg {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+}
+
+.benefit-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    /* Black headings */
+    margin: 0 0 10px 0;
+}
+
+.benefit-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444;
+    /* Dark grey text */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Proudly Cebuano Section */
+/* Proudly Cebuano Section Wrapper */
+.cebuano-community-section {
+    position: relative;
+    margin: 100px auto;
+    background-image: url('../img/coding.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 40px;
+    border-radius: 40px;
+    max-width: 1400px;
+    overflow: hidden;
+    /* Ensure content stays within rounded corners */
+}
+
+/* Overlay for better text readability */
+.cebuano-community-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.cebuano-community-section>* {
+    position: relative;
+    z-index: 2;
+}
+
+.proudly-cebuano {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    /* Kept size large */
+    font-weight: 700;
+    /* Bold */
+    text-align: center;
+    margin-top: 0;
+    /* Reset top margin */
+    margin-bottom: 80px;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    /* Tight tracking like the image */
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.logo-row img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 25px;
+    /* Removed filters to show original full color */
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* Assuming logo images are colored */
+.logo-row img:hover {
+    transform: scale(1.1);
+}
+
+.logo-row h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.logo-row p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Do you Have an Idea CTA Section */
+.idea-cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 150px auto 100px;
+    /* Spacing from previous section */
+    padding: 0 40px;
+}
+
+.idea-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.partner-btn {
+    background-color: #ddd;
+    /* Light grey/off-white background */
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    /* Extra bold */
+    text-transform: uppercase;
+    padding: 25px 60px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    /* Boxy look as per image */
+}
+
+.partner-btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustment for CTA */
+@media (max-width: 1024px) {
+    .idea-cta-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .idea-text {
+        font-size: 40px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonials-title {
+        font-size: 70px;
+    }
+
+    .spotlight-card {
+        flex-direction: column;
+    }
+
+    .spotlight-image-container {
+        height: 350px;
+        order: -1;
+        mask-image: none;
+        border-bottom: 1px solid #222;
+    }
+
+    .spotlight-img {
+        transform: rotate(0deg);
+        width: 70%;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-header,
+    .grid-label {
+        padding-left: 20px;
+    }
+}

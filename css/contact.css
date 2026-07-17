@@ -1,0 +1,193 @@
+/* CSS for Contact Page - Inspired by Symph.co */
+
+.contact-container {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* Normally handled by section #contact in home.css but we ensure overrides here */
+}
+
+/* Update the #contact section padding for this page specifically */
+#contact {
+    background-color: #000;
+    background-image: url('../img/shakehands.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 20px 100px;
+    /* Top padding for header */
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+/* Left Side: Text Info */
+.contact-info {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.title-talk {
+    font-family: 'Newake', sans-serif;
+    /* Using Newake for headings as per other pages */
+    font-size: 100px;
+    line-height: 0.9;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 30px;
+    position: static;
+    /* Removing absolute pos from previous css */
+    padding-left: 0;
+}
+
+.subtitle-talk {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 50px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.contact-details-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.contact-details-text p {
+    margin-bottom: 10px;
+}
+
+/* Right Side: Form */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.form-group label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease, padding 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #e0e0e0;
+    /* Darker placeholder for that clean feel */
+    font-weight: 400;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+    /* Subtle shift on focus */
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Button Styling - Pill Shape */
+.send-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    /* Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.send-btn:hover {
+    background-color: #dbdbdb;
+    transform: translateX(5px);
+    /* Subtle move effect */
+}
+
+.send-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.send-btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+    }
+
+    .title-talk {
+        font-size: 70px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
